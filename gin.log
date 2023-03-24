@@ -1,0 +1,18 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /user/heathCheck          --> github.com/example/gin_framework/controller.UserController.HeathCheck-fm (5 handlers)
+[GIN-debug] GET    /user/                    --> github.com/example/gin_framework/controller.UserController.GetAllUsers-fm (5 handlers)
+[GIN-debug] POST   /user/                    --> github.com/example/gin_framework/controller.UserController.Create-fm (5 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] redirecting request 307: /user/ --> /user/
+::1 - [24 Mar 23 10:14 +07] - "POST /user/ 400" - 511.236µs
+[GIN-debug] redirecting request 307: /user/ --> /user/
+::1 - [24 Mar 23 10:14 +07] - "POST /user/ 500" - 66.022604ms
+[GIN-debug] redirecting request 307: /user/ --> /user/
+::1 - [24 Mar 23 10:14 +07] - "POST /user/ 400" - 277.775µs
+[GIN-debug] redirecting request 307: /user/ --> /user/
+::1 - [24 Mar 23 10:15 +07] - "POST /user/ 200" - 64.96125ms
